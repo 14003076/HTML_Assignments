@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home page</title>
+    <style>
+            body {
+                background-color: rgb(173, 230, 185);
+            }
+            
+            h1 {
+                color: red;
+                text-align: center;
+            }
+</style>            
+</head>
+<body>
+    <h1><center>Registration form</center></h1>
+    <center><form>
+        First Name  <input type="text" name="First Name"pattern="[a-zA-Z]{1,25}"required><br>
+        <br>Last Name  <input type="text" name="Last Name"pattern="[a-zA-Z]{1,25}"required><br>
+       <br>Address<br><br><textarea name ="Adress" rows="6" cols="18"maxlength="50"></textarea>
+      <br><br> City  <select><option value="select">select</option>
+                            <option value="vij">vij</option>
+                           <option value="hyd">hyd</option>
+                           <option value="mum">mum</option></select>
+              <br><br><form> Email   <input type="Email"name="Email"required placeholder="something@something.com">
+              <br><br>State    <select><option value="select">select</option>
+                                       <option value="AP">AP</option>
+                                       <option value="TELANGANA">TELANGANA</option>
+                                       <option value="MAHARASTRA">MAHARASTRA</option></select>
+              <br><br>University Branch Name   <select><option value="select">select</option>
+                                                        <option value="CSE">CSE</option>
+                                                        <option value="ECE">ECE</option>
+                                                        <option value="CE">CE</option></select>
+                    <br><br>Phone Number (format: 0123456789):
+
+                            <input type="tel" pattern="^\d{10}$" required >
+
+                    <br><br>Enrolled Course    <select><option value="select">select</option>></option>
+                                                        <option value="IOT">IOT</option>
+                                                        <option value="CLOUD">CLOUD</option>
+                                                        <option value="NETWORKS">NETWORKS</option></select>
+                       <br><br>Date of Test   <input type="date">
+                       <br><br>Written Test marks    <input type="number"min="50"max="100"maxlength="3"required>
+                     <br><br>  <input type="submit"value="submit">
+                    </center>                                                                                          
+       </form>
+</body>
+</html>
